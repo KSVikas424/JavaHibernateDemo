@@ -1,4 +1,4 @@
-package JavaHibernet.hibernetdemo;
+package com.niit.JavaHibernate;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
