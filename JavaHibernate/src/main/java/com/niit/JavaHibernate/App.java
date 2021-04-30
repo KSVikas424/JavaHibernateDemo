@@ -16,8 +16,8 @@ public class App
 	public static void main( String[] args )
 	{
 		System.out.println( "Hello World!" );
-		StudentName studentName = new StudentName("fname", "myname", "lastname");
-		Student student = new Student(22,2,33,studentName);
+		StudentName studentName = new StudentName("srinivas", "vikas", "lastname");
+		Student student = new Student(21,3,43,studentName);
 		//System.out.println(student);
 		Configuration configuration = new Configuration().configure().addAnnotatedClass(Student.class);
 
