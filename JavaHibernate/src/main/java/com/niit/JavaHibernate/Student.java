@@ -12,19 +12,19 @@ public class Student {
 	@Id
 	int _id;
 	//@Transient
-	String name;
+	StudentName name;
 	//@Column(name = "trimester")
 	int semester;
 	int average;
 	
 	public  Student() {}
 
-	public Student(int id, String name, int semester, int average) {
+	public Student(int id, int semester, int average,StudentName sname) {
 		super();
 		this._id = id;
-		this.name = name;
 		this.semester = semester;
 		this.average = average;
+		this.name = sname;
 	}
 	public int getId() {
 		return _id;
@@ -32,12 +32,7 @@ public class Student {
 	public void setId(int id) {
 		this._id = id;
 	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
+
 	public int getSemester() {
 		return semester;
 	}
